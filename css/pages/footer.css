@@ -1,6 +1,6 @@
 .footer {
   min-height: 70vh;
-  background: #f9fafb;
+  background: var(--clr-gray-light);
   color: var(--clr-secondary);
   display: flex;
   justify-content: space-between;
@@ -22,7 +22,7 @@
 .footer .footer-signoff {
   width: 80%;
   margin: auto;
-  border-top: 1px solid #d1d5db;
+  border-top: 1px solid var(--clr-secondary-light);
   padding: 1rem;
   text-align: center;
 }
