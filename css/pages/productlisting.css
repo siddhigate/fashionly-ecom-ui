@@ -1,0 +1,144 @@
+.products-container {
+  min-height: 100vh;
+  margin-top: 3rem;
+}
+
+/* 
+   * Sidebar filters
+  */
+
+.sidebar-filters {
+  width: 20%;
+  height: fit-content;
+  overflow-y: auto;
+  position: sticky;
+  top: 8rem;
+  padding: 0 1rem 0 2rem;
+}
+
+.sidebar-toggle-title {
+  color: var(--clr-secondary-dark);
+  display: flex;
+  padding: 1rem 0;
+  cursor: pointer;
+  letter-spacing: 0.25rem;
+}
+
+.filters-heading {
+  color: var(--clr-secondary-dark);
+  padding: 1rem 0;
+}
+
+.filters-heading .txt {
+  margin-left: 1rem;
+  letter-spacing: 0.25rem;
+}
+
+.filters-subheading {
+  font-size: 0.9rem;
+  color: var(--clr-secondary-dark);
+  letter-spacing: 0.1rem;
+}
+
+.filters-section {
+  margin: 1rem 0;
+  padding: 0 1rem;
+  border-bottom: 1px solid var(--clr-secondary-light);
+}
+
+.filters-section .radio-container,
+.filters-section .checkbox-container {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.filters-section .form-control[type="range"] {
+  accent-color: var(--clr-primary);
+}
+
+.filters-options {
+  display: flex;
+  flex-direction: column;
+  margin: 0.7rem 0;
+}
+
+.txt-clear {
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.txt-clear:hover,
+.txt-clear:focus {
+  font-weight: 700;
+}
+
+.product-listing {
+  width: 75%;
+  padding: 1rem;
+}
+
+/* 
+   * Product listing
+  */
+
+.product-listing .card:hover {
+  transform: scale(1.05);
+  transition: transform 300ms ease-in-out;
+}
+
+.product-listing .card {
+  cursor: pointer;
+  width: auto;
+}
+
+.product-listing .card .icon {
+  color: var(--clr-secondary);
+}
+
+.product-listing .card .icon:hover {
+  color: var(--clr-primary);
+  max-width: 100%;
+}
+
+.product-listing .card .card-image {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .product-listing {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .sidebar-toggle-container {
+    display: block;
+  }
+
+  .product-listing {
+    width: 100%;
+  }
+
+  .sidebar-filters {
+    position: fixed;
+    top: 6rem;
+    right: 3rem;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-white);
+    z-index: 5;
+    margin: 0;
+    padding: 4rem 2rem;
+    transform: translateX(-100%);
+    transition: transform 500ms ease-in-out;
+  }
+
+  .sidebar-filters[data-visible="true"] {
+    transform: translateX(0);
+  }
+}
