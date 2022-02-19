@@ -9,10 +9,69 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../../assets/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16x16.png">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 
 <body>
+    <header class="header">
+        <div class="header-info-wrapper">
+
+            <div class="logo">
+                <span class="logo-title">fashionly</span>
+            </div>
+
+            <div class="flex flex-justify-between flex-items-center flex-gap-lg header-nav">
+                <div class="search-input-wrapper">
+                    <i class="fas fa-search icon"></i>
+                    <input type="search" class="form-control" aria-label="Search Product" placeholder="Search Product">
+                </div>
+                <nav>
+                    <ul
+                        class="navigation flex flex-justify-center flex-items-center flex-gap-lg list-style-none list-inline">
+
+                        <li class="list-item search-icon">
+                            <a href="" class="link">
+                                <div class="badge-container">
+                                    <i class="fas fa-search icon"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./cart.html" class="link">
+                                <div class="badge-container">
+                                    <i class="fas fa-shopping-cart icon"></i>
+                                    <span class="badge badge-status badge-notification">3</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./wishlist.html" class="link">
+                                <div class="badge-container">
+                                    <i class="fas fa-heart icon"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./login.html" class="link">
+                                <div class="badge-container">
+                                    <i class="fa-solid fa-user icon"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="logout-container flex flex-items-center flex-justify-center">
+        <div class="card-logout flex flex-col flex-items-center m-md">
+            <i class="fas fa-circle-check icon"></i>
+            <p class="logout-msg txt-center">You have been logged out successfully!</p>
+            <a href="../landing.html" class="link txt-primary">Back to home</a>
+        </div>
+    </main>
 
 </body>
 
