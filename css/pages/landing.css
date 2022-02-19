@@ -1,0 +1,129 @@
+/* 
+ *  Banner
+*/
+
+.banner-img:hover {
+  cursor: pointer;
+}
+
+.banner-img {
+  width: 70%;
+}
+
+.banner-img .img {
+  height: 70vh;
+}
+
+.banner-info .btn {
+  padding: 0.75rem 4rem;
+}
+
+/* 
+ *  Featured sections
+*/
+
+.section-featured {
+  padding: 1rem;
+  margin-top: 2rem;
+  scroll-margin-top: 6rem;
+}
+
+.section-featured .h2 {
+  font-size: 1.75rem;
+  color: var(--clr-secondary-dark);
+  letter-spacing: 0.75rem;
+}
+
+.featured-container {
+  margin: 2rem 1rem;
+  max-width: 1300px;
+  margin: 2rem auto;
+  gap: 1rem;
+}
+
+.featured-container .image-container {
+  position: relative;
+  width: fit-content;
+}
+
+.featured-container .img {
+  height: 50vh;
+  object-fit: cover;
+}
+
+.featured-card:hover {
+  transform: scale(1.1);
+  transition: transform 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.featured-card {
+  position: relative;
+}
+
+.featured-info {
+  position: absolute;
+  background: white;
+  bottom: 2rem;
+  left: 0rem;
+  right: 0rem;
+  font-style: italic;
+  font-size: 2rem;
+  padding: 0.25rem 1rem;
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 700px) {
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner-img {
+    width: 100%;
+  }
+
+  .banner-img .img {
+    height: 20vh;
+  }
+
+  .banner-info .heading {
+    font-size: 2.5rem;
+  }
+
+  .banner-info .subheading {
+    font-size: 1.75rem;
+  }
+
+  .banner-info {
+    align-items: center;
+  }
+
+  .banner-info .btn {
+    margin: 0;
+  }
+
+  .banner-info {
+    align-items: center;
+  }
+
+  .banner-info .btn {
+    margin: 0;
+  }
+
+  .section-featured .h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .featured-container .img {
+    height: 40vh;
+  }
+
+  .featured-info {
+    font-size: 1.5rem;
+  }
+
+  .navigation .search-icon {
+    display: initial;
+  }
+}
