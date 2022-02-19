@@ -24,10 +24,6 @@
   height: auto;
 }
 
-.product-count-block {
-  font-size: 1rem;
-}
-
 .product-count-block .count-action {
   font-size: 1.5rem;
   cursor: pointer;
@@ -40,7 +36,6 @@
 }
 
 .cart-container .wishlist-cta {
-  font-size: 0.9rem;
   cursor: pointer;
 }
 
@@ -58,13 +53,11 @@
 .coupons-container,
 .billing-container {
   margin: 1rem 0 0.5rem 0;
-  font-size: 0.9rem;
 }
 
 .coupons-container .icon,
 .address-container .icon {
   margin-right: 0.5rem;
-  font-size: 1rem;
 }
 
 .coupons-container .btn,
@@ -78,7 +71,6 @@
 }
 
 .address-container {
-  font-size: 0.9rem;
   margin-top: 0.25rem;
 }
 
