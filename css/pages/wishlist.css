@@ -20,8 +20,16 @@
   color: var(--clr-primary);
 }
 
+.card .card-cta {
+  padding: 0.5rem;
+}
+
 .card-cta .icon {
   margin-right: 1rem;
+}
+
+.card-cta .btn {
+  margin: 0.25rem 0;
 }
 
 .card-cta .btn:hover {
