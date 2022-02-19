@@ -1,0 +1,9 @@
+:root {
+  --clr-primary: #ff3f6c;
+  --clr-primary-light: #fd678a;
+  --clr-primary-dark: #fa3362;
+
+  --clr-aliceblue: aliceblue;
+
+  --box-shadow-card: 0px 3px 18px -5px #d1d5db;
+}
