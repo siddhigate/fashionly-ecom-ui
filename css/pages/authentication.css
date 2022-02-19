@@ -24,6 +24,41 @@
   font-weight: var(--fw-bold);
 }
 
+/* 
+ *  Logout
+*/
+
+.logout-container {
+  height: 70vh;
+}
+
+.card-logout .icon {
+  font-size: 3rem;
+  color: var(--clr-primary);
+}
+
+.card-logout {
+  max-width: 40rem;
+  background-color: white;
+  padding: 2rem 1rem;
+  box-shadow: var(--box-shadow-card);
+}
+
+.card-logout .logout-msg {
+  margin: 2rem 1rem 1rem 1rem;
+  font-size: 1.25rem;
+}
+
+.card-logout .link {
+  text-decoration: none;
+  border-bottom: 1px solid var(--clr-primary);
+}
+
+.card-logout .link:hover,
+.card-logout .link:hover {
+  font-weight: var(--fw-bold);
+}
+
 @media screen and (max-width: 600px) {
   .auth-form {
     box-shadow: none;
