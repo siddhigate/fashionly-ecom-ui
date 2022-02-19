@@ -1,0 +1,44 @@
+.wishlist-main {
+  max-width: 1000px;
+  padding: 0 1rem;
+  margin: 1rem auto;
+}
+
+.wishlist-main .h1 {
+  margin: 2rem 0;
+}
+
+.wishlist-products {
+  gap: 0.5rem;
+}
+
+.wishlist-products .card-cta {
+  padding: 0 0.5rem;
+}
+
+.card > .icon {
+  color: var(--clr-primary);
+}
+
+.card-cta .icon {
+  margin-right: 1rem;
+}
+
+.card-cta .btn:hover {
+  box-shadow: none;
+}
+
+@media screen and (max-width: 650px) {
+  .wishlist-products .btn {
+    padding: 0.75rem 0;
+  }
+
+  .card-cta .icon {
+    margin-right: 0.75rem;
+  }
+
+  .txt-discount {
+    display: block;
+    margin-top: 0.25rem;
+  }
+}
