@@ -54,7 +54,6 @@
   border-bottom: 1px solid var(--clr-primary);
 }
 
-.card-logout .link:hover,
 .card-logout .link:hover {
   font-weight: var(--fw-bold);
 }
