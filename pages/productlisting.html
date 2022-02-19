@@ -14,6 +14,540 @@
 
 <body>
 
+    <header class="header">
+        <div class="header-info-wrapper">
+
+            <div class="logo">
+                <span class="logo-title">fashionly</span>
+            </div>
+
+            <div class="flex flex-justify-between flex-items-center flex-gap-lg header-nav">
+                <div class="search-input-wrapper">
+                    <i class="fas fa-search icon"></i>
+                    <input type="search" class="form-control" aria-label="Search Product" placeholder="Search Product">
+                </div>
+                <nav>
+                    <ul
+                        class="navigation flex flex-justify-center flex-items-center flex-gap-lg list-style-none list-inline">
+
+                        <li class="list-item search-icon">
+                            <a href="" class="link">
+                                <div class="badge-container">
+                                    <i class="fas fa-search icon"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./cart.html" class="link">
+                                <div class="badge-container">
+                                    <i class="fas fa-shopping-cart icon"></i>
+                                    <span class="badge badge-status badge-notification">3</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./wishlist.html" class="link">
+                                <div class="badge-container">
+                                    <i class="fas fa-heart icon"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./authentication/login.html" class="link">
+                                <div class="badge-container">
+                                    <i class="fa-solid fa-user icon"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="sidebar-toggle-container border-top-gray bg-white mt-sm d-none">
+            <div class="sidebar-toggle-title flex flex-items-center flex-gap-md sidebar-filters-toggle"
+                aria-controls="sidebar-filters">
+                <i class="fa-solid fa-filter"></i>
+                <span class="txt-uppercase">Filters</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="products-container flex flex-justify-between gap-sm">
+
+        <aside id="sidebar-filters" class="sidebar-filters border-right-gray" data-visible="false">
+
+            <div class="border-bottom-gray mb-sm flex flex-justify-between flex-items-center flex-gap-sm">
+
+                <div class="filters-heading flex flex-items-center flex-gap-sm">
+                    <i class="fa-solid fa-filter"></i>
+                    <span class="txt txt-uppercase">Filters</span>
+                </div>
+
+                <div class="txt-uppercase txt-primary fw-semibold txt-clear">
+                    Clear all
+                </div>
+            </div>
+
+            <div class="filters-section">
+                <div class="filters-subheading txt-uppercase">Ratings</div>
+
+                <input class="form-control width-100 mt-md mb-md" type="range" min="0" max="5" value="4" step="1">
+            </div>
+
+            <div class="filters-section">
+                <div class="filters-subheading txt-uppercase">Categories</div>
+
+                <div class="filters-options">
+                    <label class="checkbox-container"> Dresses
+                        <input type="checkbox" class="form-control" />
+                        <span class="checkbox-custom"></span>
+                    </label>
+                    <label class="checkbox-container"> Tops
+                        <input type="checkbox" class="form-control" />
+                        <span class="checkbox-custom"></span>
+                    </label>
+                    <label class="checkbox-container"> Tshirts
+                        <input type="checkbox" class="form-control" />
+                        <span class="checkbox-custom"></span>
+                    </label>
+                    <label class="checkbox-container"> Jeans
+                        <input type="checkbox" class="form-control" />
+                        <span class="checkbox-custom"></span>
+                    </label>
+                    <label class="checkbox-container"> Sweatshirts
+                        <input type="checkbox" class="form-control" />
+                        <span class="checkbox-custom"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="filters-section">
+                <div class="filters-subheading txt-uppercase">Price</div>
+
+                <div class="filters-options">
+                    <label class="radio-container">Sort from low to high
+                        <input type="radio" name="price" class="form-control" />
+                        <span class="radio-custom"></span>
+                    </label>
+                    <label class="radio-container">Sort from high to low
+                        <input type="radio" name="price" class="form-control" />
+                        <span class="radio-custom"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="filters-section">
+                <div class="filters-subheading txt-uppercase">Brands</div>
+
+                <div class="filters-options">
+                    <label class="checkbox-container"> WestSide
+                        <input type="checkbox" class="form-control" />
+                        <span class="checkbox-custom"></span>
+                    </label>
+                    <label class="checkbox-container"> Prada
+                        <input type="checkbox" class="form-control" />
+                        <span class="checkbox-custom"></span>
+                    </label>
+                    <label class="checkbox-container"> Zara
+                        <input type="checkbox" class="form-control" />
+                        <span class="checkbox-custom"></span>
+                    </label>
+                </div>
+            </div>
+        </aside>
+
+        <div class="product-listing grid grid-col-4 grid-col-3-md grid-col-2-sm">
+            <div class="card card-shadow mb-lg">
+                <img src="../assets/images/deal1.webp" alt="" class="img-responsive card-image">
+                <div class="card-info">
+                    <p class="txt-dark-gray fw-semibold fs-md">Winter wear</p>
+                    <p class="txt-gray fw-semibold">Yellow and white dress</p>
+                    <p class="txt-price">
+                        <span class="fw-bolder"> Rs. 999 </span>
+                        <span class="txt-strike-through txt-secondary fs-sm mx-sm">Rs.2000</span>
+                        <span class="txt-green">50% off</span>
+                    </p>
+                    <p class="txt-delivery fs-sm">Free delivery</p>
+                </div>
+                <div class="cta flex flex-col">
+                    <btn class="btn btn-primary width-100">
+                        <i class="fa-solid fa-shopping-cart cta-icon"></i>
+                        <span class="action-txt">Add to</span><span>Cart</span>
+                    </btn>
+                    <btn class="btn btn-outline-primary width-100">
+                        <i class="fa-solid fa-heart cta-icon"></i> 
+                        <span class="action-txt">Add to</span><span>Wishlist</span>
+                    </btn>
+                </div>
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+            <div class="card card-shadow mb-lg">
+                <img src="../assets/images/categories1.webp" alt="" class="img-responsive card-image">
+                <div class="card-info">
+                    <p class="txt-dark-gray fw-semibold fs-md">Winter wear</p>
+                    <p class="txt-gray fw-semibold">Yellow and white dress</p>
+                    <p class="txt-price">
+                        <span class="fw-bolder"> Rs. 999 </span>
+                        <span class="txt-strike-through txt-secondary fs-sm mx-sm">Rs.2000</span>
+                        <span class="txt-green">50% off</span>
+                    </p>
+                    <p class="txt-delivery fs-sm">Free delivery</p>
+                </div>
+                <div class="cta flex flex-col">
+                    <btn class="btn btn-primary width-100">
+                        <i class="fa-solid fa-shopping-cart cta-icon"></i>
+                        <span class="action-txt">Add to</span><span>Cart</span>
+                    </btn>
+                    <btn class="btn btn-outline-primary width-100">
+                        <i class="fa-solid fa-heart cta-icon"></i> 
+                        <span class="action-txt">Add to</span><span>Wishlist</span>
+                    </btn>
+                </div>
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+            <div class="card card-shadow mb-lg">
+                <img src="../assets/images/categories2.webp" alt="" class="img-responsive card-image">
+                <div class="card-info">
+                    <p class="txt-dark-gray fw-semibold fs-md">Winter wear</p>
+                    <p class="txt-gray fw-semibold">Yellow and white dress</p>
+                    <p class="txt-price">
+                        <span class="fw-bolder"> Rs. 999 </span>
+                        <span class="txt-strike-through txt-secondary fs-sm mx-sm">Rs.2000</span>
+                        <span class="txt-green">50% off</span>
+                    </p>
+                    <p class="txt-delivery fs-sm">Free delivery</p>
+                </div>
+                <div class="cta flex flex-col">
+                    <btn class="btn btn-primary width-100">
+                        <i class="fa-solid fa-shopping-cart cta-icon"></i>
+                        <span class="action-txt">Add to</span><span>Cart</span>
+                    </btn>
+                    <btn class="btn btn-outline-primary width-100">
+                        <i class="fa-solid fa-heart cta-icon"></i> 
+                        <span class="action-txt">Add to</span><span>Wishlist</span>
+                    </btn>
+                </div>
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+            <div class="card card-shadow mb-lg">
+                <img src="../assets/images/categories3.webp" alt="" class="img-responsive card-image">
+                <div class="card-info">
+                    <p class="txt-dark-gray fw-semibold fs-md">Winter wear</p>
+                    <p class="txt-gray fw-semibold">Yellow and white dress</p>
+                    <p class="txt-price">
+                        <span class="fw-bolder"> Rs. 999 </span>
+                        <span class="txt-strike-through txt-secondary fs-sm mx-sm">Rs.2000</span>
+                        <span class="txt-green">50% off</span>
+                    </p>
+                    <p class="txt-delivery fs-sm">Free delivery</p>
+                </div>
+                <div class="cta flex flex-col">
+                    <btn class="btn btn-primary width-100">
+                        <i class="fa-solid fa-shopping-cart cta-icon"></i>
+                        <span class="action-txt">Add to</span><span>Cart</span>
+                    </btn>
+                    <btn class="btn btn-outline-primary width-100">
+                        <i class="fa-solid fa-heart cta-icon"></i> 
+                        <span class="action-txt">Add to</span><span>Wishlist</span>
+                    </btn>
+                </div>
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+            <div class="card card-shadow mb-lg">
+                <img src="../assets/images/categories4.webp" alt="" class="img-responsive card-image">
+                <div class="card-info">
+                    <p class="txt-dark-gray fw-semibold fs-md">Winter wear</p>
+                    <p class="txt-gray fw-semibold">Yellow and white dress</p>
+                    <p class="txt-price">
+                        <span class="fw-bolder"> Rs. 999 </span>
+                        <span class="txt-strike-through txt-secondary fs-sm mx-sm">Rs.2000</span>
+                        <span class="txt-green">50% off</span>
+                    </p>
+                    <p class="txt-delivery fs-sm">Free delivery</p>
+                </div>
+                <div class="cta flex flex-col">
+                    <btn class="btn btn-primary width-100">
+                        <i class="fa-solid fa-shopping-cart cta-icon"></i>
+                        <span class="action-txt">Add to</span><span>Cart</span>
+                    </btn>
+                    <btn class="btn btn-outline-primary width-100">
+                        <i class="fa-solid fa-heart cta-icon"></i> 
+                        <span class="action-txt">Add to</span><span>Wishlist</span>
+                    </btn>
+                </div>
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+
+            <div class="card card-shadow mb-lg">
+                <img src="../assets/images/deal2.webp" alt="" class="img-responsive card-image">
+                <div class="card-info">
+                    <p class="txt-dark-gray fw-semibold fs-md">Winter wear</p>
+                    <p class="txt-gray fw-semibold">Yellow and white dress</p>
+                    <p class="txt-price">
+                        <span class="fw-bolder"> Rs. 999 </span>
+                        <span class="txt-strike-through txt-secondary fs-sm mx-sm">Rs.2000</span>
+                        <span class="txt-green">50% off</span>
+                    </p>
+                    <p class="txt-delivery fs-sm">Free delivery</p>
+                </div>
+                <div class="cta flex flex-col">
+                    <btn class="btn btn-primary width-100">
+                        <i class="fa-solid fa-shopping-cart cta-icon"></i>
+                        <span class="action-txt">Add to</span><span>Cart</span>
+                    </btn>
+                    <btn class="btn btn-outline-primary width-100">
+                        <i class="fa-solid fa-heart cta-icon"></i> 
+                        <span class="action-txt">Add to</span><span>Wishlist</span>
+                    </btn>
+                </div>
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+            <div class="card card-shadow mb-lg">
+                <img src="../assets/images/deal3.webp" alt="" class="img-responsive card-image">
+                <div class="card-info">
+                    <p class="txt-dark-gray fw-semibold fs-md">Winter wear</p>
+                    <p class="txt-gray fw-semibold">Yellow and white dress</p>
+                    <p class="txt-price">
+                        <span class="fw-bolder"> Rs. 999 </span>
+                        <span class="txt-strike-through txt-secondary fs-sm mx-sm">Rs.2000</span>
+                        <span class="txt-green">50% off</span>
+                    </p>
+                    <p class="txt-delivery fs-sm">Free delivery</p>
+                </div>
+                <div class="cta flex flex-col">
+                    <btn class="btn btn-primary width-100">
+                        <i class="fa-solid fa-shopping-cart cta-icon"></i>
+                        <span class="action-txt">Add to</span><span>Cart</span>
+                    </btn>
+                    <btn class="btn btn-outline-primary width-100">
+                        <i class="fa-solid fa-heart cta-icon"></i> 
+                        <span class="action-txt">Add to</span><span>Wishlist</span>
+                    </btn>
+                </div>
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+            <div class="card card-shadow mb-lg">
+                <img src="../assets/images/deal4.webp" alt="" class="img-responsive card-image">
+                <div class="card-info">
+                    <p class="txt-dark-gray fw-semibold fs-md">Winter wear</p>
+                    <p class="txt-gray fw-semibold">Yellow and white dress</p>
+                    <p class="txt-price">
+                        <span class="fw-bolder"> Rs. 999 </span>
+                        <span class="txt-strike-through txt-secondary fs-sm mx-sm">Rs.2000</span>
+                        <span class="txt-green">50% off</span>
+                    </p>
+                    <p class="txt-delivery fs-sm">Free delivery</p>
+                </div>
+                <div class="cta flex flex-col">
+                    <btn class="btn btn-primary width-100">
+                        <i class="fa-solid fa-shopping-cart cta-icon"></i>
+                        <span class="action-txt">Add to</span><span>Cart</span>
+                    </btn>
+                    <btn class="btn btn-outline-primary width-100">
+                        <i class="fa-solid fa-heart cta-icon"></i> 
+                        <span class="action-txt">Add to</span><span>Wishlist</span>
+                    </btn>
+                </div>
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+            <div class="card card-shadow mb-lg">
+                <img src="../assets/images/deal1.webp" alt="" class="img-responsive card-image">
+                <div class="card-info">
+                    <p class="txt-dark-gray fw-semibold fs-md">Winter wear</p>
+                    <p class="txt-gray fw-semibold">Yellow and white dress</p>
+                    <p class="txt-price">
+                        <span class="fw-bolder"> Rs. 999 </span>
+                        <span class="txt-strike-through txt-secondary fs-sm mx-sm">Rs.2000</span>
+                        <span class="txt-green">50% off</span>
+                    </p>
+                    <p class="txt-delivery fs-sm">Free delivery</p>
+                </div>
+                <div class="cta flex flex-col">
+                    <btn class="btn btn-primary width-100">
+                        <i class="fa-solid fa-shopping-cart cta-icon"></i>
+                        <span class="action-txt">Add to</span><span>Cart</span>
+                    </btn>
+                    <btn class="btn btn-outline-primary width-100">
+                        <i class="fa-solid fa-heart cta-icon"></i> 
+                        <span class="action-txt">Add to</span><span>Wishlist</span>
+                    </btn>
+                </div>
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+            <div class="card card-shadow mb-lg">
+                <img src="../assets/images/categories1.webp" alt="" class="img-responsive card-image">
+                <div class="card-info">
+                    <p class="txt-dark-gray fw-semibold fs-md">Winter wear</p>
+                    <p class="txt-gray fw-semibold">Yellow and white dress</p>
+                    <p class="txt-price">
+                        <span class="fw-bolder"> Rs. 999 </span>
+                        <span class="txt-strike-through txt-secondary fs-sm mx-sm">Rs.2000</span>
+                        <span class="txt-green">50% off</span>
+                    </p>
+                    <p class="txt-delivery fs-sm">Free delivery</p>
+                </div>
+                <div class="cta flex flex-col">
+                    <btn class="btn btn-primary width-100">
+                        <i class="fa-solid fa-shopping-cart cta-icon"></i>
+                        <span class="action-txt">Add to</span><span>Cart</span>
+                    </btn>
+                    <btn class="btn btn-outline-primary width-100">
+                        <i class="fa-solid fa-heart cta-icon"></i> 
+                        <span class="action-txt">Add to</span><span>Wishlist</span>
+                    </btn>
+                </div>
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+            <div class="card card-shadow mb-lg">
+                <img src="../assets/images/categories2.webp" alt="" class="img-responsive card-image">
+                <div class="card-info">
+                    <p class="txt-dark-gray fw-semibold fs-md">Winter wear</p>
+                    <p class="txt-gray fw-semibold">Yellow and white dress</p>
+                    <p class="txt-price">
+                        <span class="fw-bolder"> Rs. 999 </span>
+                        <span class="txt-strike-through txt-secondary fs-sm mx-sm">Rs.2000</span>
+                        <span class="txt-green">50% off</span>
+                    </p>
+                    <p class="txt-delivery fs-sm">Free delivery</p>
+                </div>
+                <div class="cta flex flex-col">
+                    <btn class="btn btn-primary width-100">
+                        <i class="fa-solid fa-shopping-cart cta-icon"></i>
+                        <span class="action-txt">Add to</span><span>Cart</span>
+                    </btn>
+                    <btn class="btn btn-outline-primary width-100">
+                        <i class="fa-solid fa-heart cta-icon"></i> 
+                        <span class="action-txt">Add to</span><span>Wishlist</span>
+                    </btn>
+                </div>
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+            <div class="card card-shadow mb-lg">
+                <img src="../assets/images/categories3.webp" alt="" class="img-responsive card-image">
+                <div class="card-info">
+                    <p class="txt-dark-gray fw-semibold fs-md">Winter wear</p>
+                    <p class="txt-gray fw-semibold">Yellow and white dress</p>
+                    <p class="txt-price">
+                        <span class="fw-bolder"> Rs. 999 </span>
+                        <span class="txt-strike-through txt-secondary fs-sm mx-sm">Rs.2000</span>
+                        <span class="txt-green">50% off</span>
+                    </p>
+                    <p class="txt-delivery fs-sm">Free delivery</p>
+                </div>
+                <div class="cta flex flex-col">
+                    <btn class="btn btn-primary width-100">
+                        <i class="fa-solid fa-shopping-cart cta-icon"></i>
+                        <span class="action-txt">Add to</span><span>Cart</span>
+                    </btn>
+                    <btn class="btn btn-outline-primary width-100">
+                        <i class="fa-solid fa-heart cta-icon"></i> 
+                        <span class="action-txt">Add to</span><span>Wishlist</span>
+                    </btn>
+                </div>
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+            <div class="card card-shadow mb-lg">
+                <img src="../assets/images/categories4.webp" alt="" class="img-responsive card-image">
+                <div class="card-info">
+                    <p class="txt-dark-gray fw-semibold fs-md">Winter wear</p>
+                    <p class="txt-gray fw-semibold">Yellow and white dress</p>
+                    <p class="txt-price">
+                        <span class="fw-bolder"> Rs. 999 </span>
+                        <span class="txt-strike-through txt-secondary fs-sm mx-sm">Rs.2000</span>
+                        <span class="txt-green">50% off</span>
+                    </p>
+                    <p class="txt-delivery fs-sm">Free delivery</p>
+                </div>
+                <div class="cta flex flex-col">
+                    <btn class="btn btn-primary width-100">
+                        <i class="fa-solid fa-shopping-cart cta-icon"></i>
+                        <span class="action-txt">Add to</span><span>Cart</span>
+                    </btn>
+                    <btn class="btn btn-outline-primary width-100">
+                        <i class="fa-solid fa-heart cta-icon"></i> 
+                        <span class="action-txt">Add to</span><span>Wishlist</span>
+                    </btn>
+                </div>
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+
+            <div class="card card-shadow mb-lg">
+                <img src="../assets/images/deal2.webp" alt="" class="img-responsive card-image">
+                <div class="card-info">
+                    <p class="txt-dark-gray fw-semibold fs-md">Winter wear</p>
+                    <p class="txt-gray fw-semibold">Yellow and white dress</p>
+                    <p class="txt-price">
+                        <span class="fw-bolder"> Rs. 999 </span>
+                        <span class="txt-strike-through txt-secondary fs-sm mx-sm">Rs.2000</span>
+                        <span class="txt-green">50% off</span>
+                    </p>
+                    <p class="txt-delivery fs-sm">Free delivery</p>
+                </div>
+                <div class="cta flex flex-col">
+                    <btn class="btn btn-primary width-100">
+                        <i class="fa-solid fa-shopping-cart cta-icon"></i>
+                        <span class="action-txt">Add to</span><span>Cart</span>
+                    </btn>
+                    <btn class="btn btn-outline-primary width-100">
+                        <i class="fa-solid fa-heart cta-icon"></i> 
+                        <span class="action-txt">Add to</span><span>Wishlist</span>
+                    </btn>
+                </div>
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+            <div class="card card-shadow mb-lg">
+                <img src="../assets/images/deal3.webp" alt="" class="img-responsive card-image">
+                <div class="card-info">
+                    <p class="txt-dark-gray fw-semibold fs-md">Winter wear</p>
+                    <p class="txt-gray fw-semibold">Yellow and white dress</p>
+                    <p class="txt-price">
+                        <span class="fw-bolder"> Rs. 999 </span>
+                        <span class="txt-strike-through txt-secondary fs-sm mx-sm">Rs.2000</span>
+                        <span class="txt-green">50% off</span>
+                    </p>
+                    <p class="txt-delivery fs-sm">Free delivery</p>
+                </div>
+                <div class="cta flex flex-col">
+                    <btn class="btn btn-primary width-100">
+                        <i class="fa-solid fa-shopping-cart cta-icon"></i>
+                        <span class="action-txt">Add to</span><span>Cart</span>
+                    </btn>
+                    <btn class="btn btn-outline-primary width-100">
+                        <i class="fa-solid fa-heart cta-icon"></i> 
+                        <span class="action-txt">Add to</span><span>Wishlist</span>
+                    </btn>
+                </div>
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+            <div class="card card-shadow mb-lg">
+                <img src="../assets/images/deal4.webp" alt="" class="img-responsive card-image">
+                <div class="card-info">
+                    <p class="txt-dark-gray fw-semibold fs-md">Winter wear</p>
+                    <p class="txt-gray fw-semibold">Yellow and white dress</p>
+                    <p class="txt-price">
+                        <span class="fw-bolder"> Rs. 999 </span>
+                        <span class="txt-strike-through txt-secondary fs-sm mx-sm">Rs.2000</span>
+                        <span class="txt-green">50% off</span>
+                    </p>
+                    <p class="txt-delivery fs-sm">Free delivery</p>
+                </div>
+                <div class="cta flex flex-col">
+                    <btn class="btn btn-primary width-100">
+                        <i class="fa-solid fa-shopping-cart cta-icon"></i>
+                        <span class="action-txt">Add to</span><span>Cart</span>
+                    </btn>
+                    <btn class="btn btn-outline-primary width-100">
+                        <i class="fa-solid fa-heart cta-icon"></i> 
+                        <span class="action-txt">Add to</span><span>Wishlist</span>
+                    </btn>
+                </div>
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+        </div>
+
+    </div>
+
     <script src="../js/app.js"></script>
 </body>
 
