@@ -1,0 +1,32 @@
+/* 
+ *   Authentication form
+*/
+
+.auth-form {
+  background: white;
+  box-shadow: var(--box-shadow-card);
+  padding: 2rem;
+}
+
+.auth-form .form-control-wrapper {
+  margin: 1rem 0;
+}
+
+.auth-form .link {
+  text-decoration: none;
+}
+
+.auth-form .btn:hover {
+  box-shadow: none;
+}
+
+.auth-form .link:hover {
+  font-weight: var(--fw-bold);
+}
+
+@media screen and (max-width: 600px) {
+  .auth-form {
+    box-shadow: none;
+    background: transparent;
+  }
+}
