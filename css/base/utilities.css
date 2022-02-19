@@ -1,3 +1,7 @@
+.fs-xs {
+  font-size: 0.9rem;
+}
+
 .fst-italic {
   font-style: italic;
 }
@@ -33,6 +37,15 @@
 }
 
 @media screen and (max-width: 700px) {
+
+  .flex-col-sm {
+    flex-direction: column;
+  }
+
+  .flex-items-start-sm {
+    align-items: flex-start;
+  }
+
   .grid-col-2-sm {
     grid-template-columns: repeat(2, 1fr);
   }
