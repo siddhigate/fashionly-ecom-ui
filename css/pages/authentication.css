@@ -58,6 +58,15 @@
   font-weight: var(--fw-bold);
 }
 
+.btn-logout {
+  padding: 0.25rem 0.5rem;
+  color: var(--clr-secondary-dark)
+}
+
+.btn-logout i {
+  margin-right: 0.25rem;
+}
+
 @media screen and (max-width: 600px) {
   .auth-form {
     box-shadow: none;
