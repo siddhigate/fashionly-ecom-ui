@@ -24,11 +24,7 @@
   font-weight: var(--fw-bold);
 }
 
-.auth-form .input-password-wrapper {
-  position: relative;
-}
-
-.input-password-wrapper i {
+.auth-form .icon-eye {
   position: absolute;
   right: 1rem;
   top: 1rem;
