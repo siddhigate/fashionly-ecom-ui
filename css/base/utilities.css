@@ -18,6 +18,14 @@
   min-height: 100vh;
 }
 
+.pos-absolute {
+  position: absolute;
+}
+
+.pos-relative {
+  position: relative;
+}
+
 .border-bottom-gray {
   border-bottom: 1px solid var(--clr-secondary-light);
 }
