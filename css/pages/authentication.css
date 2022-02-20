@@ -24,6 +24,13 @@
   font-weight: var(--fw-bold);
 }
 
+.auth-form .icon-eye {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  color: var(--clr-secondary-dark);
+}
+
 /* 
  *  Logout
 */
@@ -56,6 +63,15 @@
 
 .card-logout .link:hover {
   font-weight: var(--fw-bold);
+}
+
+.btn-logout {
+  padding: 0.25rem 0.5rem;
+  color: var(--clr-secondary-dark)
+}
+
+.btn-logout i {
+  margin-right: 0.25rem;
 }
 
 @media screen and (max-width: 600px) {
