@@ -24,6 +24,17 @@
   font-weight: var(--fw-bold);
 }
 
+.auth-form .input-password-wrapper {
+  position: relative;
+}
+
+.input-password-wrapper i {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  color: var(--clr-secondary-dark);
+}
+
 /* 
  *  Logout
 */
